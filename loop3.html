@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+    <script>
+      let pokemon = ["피카츄","라이츄","파이리","꼬부기","버터풀","야도란","성해경","리자몽","잠만보","토게피"];
+      let root = document.getElementById("root");
+      // let a = 0;
+
+      // for( //명령형, 절차형 프로그래밍임,컴퓨터는 자동으로 하지 않기때문에 시작과 끝을 명시해야함
+      //   let index = 0; //숫자 0을 index라는 변수에 담았다 //숫자는 사칙연산이 가능
+      //   index < 10; // 비교 연산을 한다, 10보다 작으면 실행해 
+      //   index = index + 1
+      //   ) {} 
+
+        for(let i=0; i<pokemon.length; i++){
+          let li = document.createElement("li"); //createElement(내장함수) 요소를 만들거야
+          li.textContent = pokemon[i]; 
+          root.appendChild(li) //자식으로 붙여줘
+        }
+        //자동화의 시작
+        
+    </script>
+</body>
+</html>
